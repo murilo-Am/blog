@@ -1,6 +1,6 @@
-drop database blog if exists;
+drop database if exists blog;
 
-create batabase if not exists blog;
+create database if not exists blog;
 use blog;
 
 create table usuario
