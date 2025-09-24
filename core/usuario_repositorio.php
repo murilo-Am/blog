@@ -46,7 +46,7 @@ switch($acao){
         ];
 
         $retorno = buscar('usuario', ['id', 'nome', 'email', 'senha', 'adm'], $criterio);
-
+        echo $retorno;
         if (count($retorno) > 0) {
             if (crypt($senha, $salt) == $retorno[0]['senha']) {
                 $_SESSION['login']['usuario'] = $retorno[0];
@@ -98,9 +98,6 @@ switch($acao){
         header('Location: ../usuarios.php');
         exit;
         break;
-
-    default:
-        header('Location: ../index.php');
-        exit;
-}
+    }
+header('Location: ../index.php');
 ?>
