@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Página inicial | Projeto para Web com PHP</title>
+    <title>Página inicia | Projeto para Web com PHP</title>
     <link rel="stylesheet" href="lib/bootstrap-4.2.1-dist/css/bootstrap.min.css">
 </head>
 <body>
