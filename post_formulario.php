@@ -72,8 +72,8 @@
                     <div class="form-group">
     <label for="texto">Postar em</label>
     <?php
-        $data = (!empty($entidade['data_postagem'])) ?
-            explode(' ', $entidade['data_postagem'])[0] : '';
+        $data = (!empty($entidade['data_postagem'])) ? //verifica se não esta vazio
+            explode(' ', $entidade['data_postagem'])[0] : ''; //data é o elemento 0 e a hora o 1 no vetor
         $hora = (!empty($entidade['data_postagem'])) ?
             explode(' ', $entidade['data_postagem'])[1] : '';
     ?>

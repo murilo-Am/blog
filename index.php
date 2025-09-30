@@ -54,7 +54,7 @@ if (!empty($busca)) {
         'texto',
         'like',
         "%{$busca}%"
-    ];
+    ]; //filtra os posts que tem o termo no texto
 }
 
 $posts = buscar(
@@ -68,7 +68,7 @@ $posts = buscar(
           where usuario.id = post.usuario_id) as nome'
     ],
     $criterio,
-    'data_postagem DESC'
+    'data_postagem DESC' //Ordena os resultados pela data de postagem, da mais recente para a mais antiga (DESC = decrescente)
 );
 ?>
 <div class="list-group">

@@ -5,7 +5,7 @@
     require_once 'core/sql.php';
     require_once 'core/mysqli.php';
 
-    foreach($_GET as $indice => $dado){
+    foreach($_GET as $indice => $dado){ //ele transforma automaticamente os parâmetros da URL em variáveis seguras no PHP
         $$indice = limparDados($dado);
     }
 
@@ -20,7 +20,7 @@
               where usuario.id = post.usuario_id) as nome'
         ],
         [
-            ['id', '=', $post]
+            ['id', '=', $post] //vai buscar somente o post que tem o ID igual ao valor da variável $post
         ]
     );
 
