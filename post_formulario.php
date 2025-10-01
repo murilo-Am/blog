@@ -32,7 +32,7 @@
                     }
 
                 
-                    if(!empty($id)){
+                    if(!empty($id)){ //traga o post cujo id seja exatamente esse
                         $id = (int)$id;
                 
                         $criterio = [
@@ -42,10 +42,10 @@
                         $retorno = buscar(
                             'post',
                             ['*'],
-                            $criterio
+                            $criterio //sql buscar post com o id
                         );
                 
-                        $entidade = $retorno[0];
+                        $entidade = $retorno[0]; //imprime o primeiro, que é o unico, pois id é unico
                     }
                 ?>
                 <h2>Post</h2>

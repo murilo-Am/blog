@@ -27,3 +27,8 @@ create table post
     key fk_post_usuario_idx (usuario_id),
     constraint fk_post_usuario_idx foreign key (usuario_id) references usuario (id)
 );
+
+select * from usuario;
+
+update usuario set adm = '1' where id = 1;
+update usuario set ativo = '1' where id = 1;

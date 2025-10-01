@@ -27,12 +27,12 @@
                             $id = (int) $_SESSION['login']['usuario']['id'];
 
                             $criterio = [
-                                ['id', '=', $id]
+                                ['id', '=', $id] //Quer pegar do banco de dados o usuário cujo id seja o do logado.
                             ];
 
                             $retorno = buscar(
                                 'usuario',
-                                ['id','nome','email'],
+                                ['id','nome','email'], //busca no bc
                                 $criterio
                             );
 
